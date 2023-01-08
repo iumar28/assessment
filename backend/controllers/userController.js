@@ -2,10 +2,7 @@ const ErrorHander = require("../utils/errorhander");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const User = require("../models/userModel");
 const sendToken = require("../utils/jwtToken");
-const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
-const cloudinary = require("cloudinary");
-
 // Register a User
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   const { name, email, password } = req.body;   
@@ -125,21 +122,6 @@ exports.getAllUser = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-// Get single user (admin)
-exports.getSingleUser = catchAsyncErrors(async (req, res, next) => {
-  const user = await User.findById(req.params.id);
-
-  if (!user) {
-    return next(
-      new ErrorHander(`User does not exist with Id: ${req.params.id}`)
-    );
-  }
-
-  res.status(200).json({
-    success: true,
-    user,
-  });
-});
 
 
 // Delete User 
