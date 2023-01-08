@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.rrr {
+  margin-left: 10px;
+}
+
+.Sidebar {
+  padding: 5px;
+  width: 215px;
+  color: white;
+  background-color: #055646;
+  height: 700px;
+
+}
+.pll {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.ll {
+  
+  margin-top: 370px;
+  margin-left: 20px;
+}
+.fc {
+  
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    width: 70%;
+}
+.corr {
+  
+
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fefefe;
+  padding: 0 30px;
+  border-left: 4px solid transparent;
+  margin-bottom: 10px;
+}
+.mleft {
+  margin-left: 10px;;
+}
+.brd {
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 10% 10px;
+}
+.imm {
+  height: 100px;
+  width: 100px;
+  border: 1px solid ;
+}
+.sb {
+  margin: 10px;
+}
+
+.su {
+  margin: 2px;
+}
+
+.left{
+  padding-left: 270px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
